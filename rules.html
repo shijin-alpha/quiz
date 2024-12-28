@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Rules</title>
+    <style>
+        /* Add your CSS styles for the rules page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c3e50; /* Dark blue background */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #34495e; /* Darker blue container background */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #1abc9c; /* Green header text */
+        }
+        p {
+            text-align: left;
+            line-height: 1.6;
+        }
+        ol {
+            text-align: left;
+            margin-left: 20px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #1abc9c; /* Green button background */
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #148f77; /* Darker green on hover */
+        }
+        /* Add more styles as needed */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>QuizWiz Rules</h1>
+        <p>Welcome to the Quiz Competition! Before you begin, please read the following rules:</p>
+        <ol>
+            <li>Make sure you are in a distraction-free environment.</li><br>
+            <li>First 15 questions are techinical question</li><br>
+            <li>Last five questions are aptitude questions</li><br>
+            <li>You have 30 minutes to answer all question.</li><br>
+            <li>Going back after entering the quiz will lead to the whole termination of the session and you will need to start again.</li><br>
+            <li>Do not refresh the page during the quiz.</li><br>
+            <!-- Add more rules as needed -->
+        </ol>
+        <p>By clicking 'Start Quiz,' you agree to abide by the rules of the competition.</p>
+        <form action="quiz.php" method="get">
+            <input type="submit" value="Start Quiz">
+            <a href="home.html">Go back to the home page</a>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* CSS for styling success and error messages */
+.success-message {
+    color: #f50909;
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: #FF0000;
+    font-weight: bold;
+    margin-top: 10px;
+}

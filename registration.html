@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/PROJECT/img/q3.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .registration-form {
+            background-color: rgba(245, 245, 245, 0.8); 
+            padding: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 300px;
+            width: 100%; 
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: calc(100% - 20px); 
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: calc(100% - 20px); 
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1bafe0;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0d8da5;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 10px; 
+            color: #1bafe0;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="registration.php" method="POST" class="registration-form">
+            <h1>REGISTRATION</h1>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="text" name="phoneno" placeholder="PhoneNo" required>
+            <input type="text" name="userid" placeholder="UserID" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <label for="role">Role:</label>
+            <select name="role">
+                <option value="user">User</option>
+            </select>
+            <button type="submit">Submit</button>
+            <a href="login.html">To Login, Click here</a>
+        </form>
+    </div>
+</body>
+</html>

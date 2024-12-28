@@ -1,0 +1,16 @@
+body {
+    background-color: #e9dede;
+    font-family: Arial, sans-serif;
+    text-decoration-color: white;
+    text-align: center;
+}
+input[type="submit"] {
+    background: #141313;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background:#07e1f0;
+}
